@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bug Finder | Home</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="js/projectPage.js" type="module"></script>
+    <template id="bugTicket">
+      <div class="bugCard">
+        <h3 class="cardTitle"></h3>
+        <p class="summary"></p>
+        <input type="button" value="Edit" class="editBtn" data-id="">
+        <input type="button" value="Delete" class="deleteBtn" data-id="">
+      </div>
+      <br>
+    </template>
+  </head>
+  <body>
+    <header id="main-header"></header>
+    <main class="divider">
+      <div class="projectInfo">
+        <h1 id="projectTitle"></h1>
+        <h3 id="projectDesc"></h3>
+      </div>
+      <div class="ticketHeader">
+        <h2>Bugs Found</h2>
+        <button id="reportBug">Report Bug</button>
+        <form id="addTicketForm">
+          <p>
+            <label for="createTitle">Title</label>
+            <input type="text" id="createTitle"/>
+          </p>
+          <p>
+            <textarea placeholder="Descibe the bug here" id="createDescription" rows="5"></textarea>
+          </p>
+          <button type="button" id="addBugButton">Add Bug</button>
+        </form>
+      </div>
+      <div class="commentList">
+      </div>
+    </main>
+  <footer id="main-footer"></footer>
+  </body>
+</html>
